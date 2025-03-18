@@ -13,9 +13,9 @@ import os
 # Add the parent directory to the Python path to enable absolute imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from services.file_service import FileService
-from models.tool_models import ToolUseRequest
-from utils.logger import Logger, app_logger
+from tools.file_tools import FileService
+from api.models import ToolUseRequest
+from tools.logger import Logger, app_logger
 
 class FileEditorAPI:
     """
